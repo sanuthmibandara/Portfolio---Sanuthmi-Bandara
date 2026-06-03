@@ -1,4 +1,4 @@
-# 🚀 Sanuthmi Bandara | Quality Assurance Engineer Portfolio
+# 🚀 Sanuthmi Bandara | Aspiring Quality Assurance Engineer Portfolio
 
 A modern, high-performance developer portfolio built with **React**, **Vite**, and **Framer Motion**. This project showcases my QA testing skills, automated testing frameworks, and professional experience with smooth animations and a premium minimal light-themed UI.
 
