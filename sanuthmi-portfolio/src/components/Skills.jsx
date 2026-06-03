@@ -2,25 +2,30 @@ import { motion } from 'framer-motion';
 
 const skillGroups = [
   {
-    label: "Test Automation",
+    label: "Languages",
     color: "#e11d48",
-    skills: ["Selenium WebDriver", "Cypress", "Appium", "TestNG", "JUnit", "RestAssured"],
+    skills: ["Java", "JavaScript", "C", "C++", "PHP", "Python", "HTML5", "CSS3", "Arduino", "Bash"],
   },
   {
-    label: "Manual Testing",
-    color: "#fca5a5",
-    skills: ["Test Case Design", "Exploratory Testing", "Regression Testing", "API Testing", "UAT"],
+    label: "Frameworks & Libraries",
+    color: "#a855f7",
+    skills: ["React.js", "Node.js", "Express.js", "Spring Boot", "Tailwind CSS", "React Native"],
   },
   {
-    label: "QA Tools & CI/CD",
+    label: "Databases & Mobile",
     color: "#3b82f6",
-    skills: ["Jira", "Postman", "Jenkins", "Git", "GitHub Actions", "Docker"],
+    skills: ["MySQL", "MongoDB", "Microsoft SQL", "Kotlin", "Android Studio", "ESP32"],
   },
   {
-    label: "Languages & Tech",
+    label: "Tools & Infrastructure",
     color: "#10b981",
-    skills: ["Java", "Python", "JavaScript", "SQL", "HTML/CSS", "Bash"],
-  }
+    skills: ["Git", "GitHub", "Figma", "Apache Tomcat", "REST API", "JWT", "VS Code", "Linux/Unix"],
+  },
+  {
+    label: "Concepts",
+    color: "#f59e0b",
+    skills: ["Full-Stack Development", "OOP", "System Design", "Data Structures & Algorithms", "SDLC", "Agile/Scrum", "Real-Time Systems"],
+  },
 ];
 
 const Skills = () => {
@@ -33,9 +38,9 @@ const Skills = () => {
           viewport={{ once: true }}
           className="section-header"
         >
-          <h2 className="section-title">Tech <span className="text-gradient">Stack</span></h2>
+          <h2 className="section-title">Technical <span className="text-gradient">Skills</span></h2>
           <p className="section-subtitle">
-            The languages, frameworks, and tools I use to bring ideas to life.
+            Languages, frameworks, and tools I use to design and build software solutions.
           </p>
         </motion.div>
 

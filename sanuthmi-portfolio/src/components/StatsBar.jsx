@@ -2,13 +2,13 @@ import { Fragment, useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
 const stats = [
-  { value: 6, label: 'Projects Delivered', suffix: '+' },
-  { value: 3, label: 'Team Collaborations', suffix: '+' },
+  { value: 5, label: 'Full-Stack Projects', suffix: '+' },
+  { value: 30, label: 'Code Projects', suffix: '+' },
+  { value: 3.7, label: 'CGPA at SLIIT', suffix: '', isDecimal: true },
   { value: 2, label: 'Years Building', suffix: '+' },
-  { value: 15, label: 'K+ Lines of Code', suffix: 'K' },
 ];
 
-const useCountUp = (target, duration = 1800, start = false) => {
+const useCountUp = (target, duration = 1800, start = false, isDecimal = false) => {
   const [count, setCount] = useState(0);
   useEffect(() => {
     if (!start) return;
@@ -16,16 +16,17 @@ const useCountUp = (target, duration = 1800, start = false) => {
     const step = (timestamp) => {
       if (!startTime) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / duration, 1);
-      setCount(Math.floor(progress * target));
+      const current = progress * target;
+      setCount(isDecimal ? Math.round(current * 10) / 10 : Math.floor(current));
       if (progress < 1) requestAnimationFrame(step);
     };
     requestAnimationFrame(step);
-  }, [target, duration, start]);
+  }, [target, duration, start, isDecimal]);
   return count;
 };
 
-const StatItem = ({ value, label, suffix, delay, started }) => {
-  const count = useCountUp(value, 1600, started);
+const StatItem = ({ value, label, suffix, delay, started, isDecimal }) => {
+  const count = useCountUp(value, 1600, started, isDecimal);
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -42,17 +43,17 @@ const StatItem = ({ value, label, suffix, delay, started }) => {
       <span style={{
         fontSize: 'clamp(2rem, 5vw, 3.2rem)',
         fontWeight: 800,
-        fontFamily: 'Outfit, sans-serif',
-        background: 'linear-gradient(135deg, #3b82f6, #a855f7)',
+        fontFamily: 'Plus Jakarta Sans, sans-serif',
+        background: 'linear-gradient(135deg, #e11d48, #a855f7)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
         lineHeight: 1,
       }}>
-        {count}{suffix !== 'K' ? suffix : 'K'}
+        {count}{suffix}
       </span>
       <span style={{
         fontSize: '0.78rem',
-        color: '#94a3b8',
+        color: 'var(--text-secondary)',
         fontWeight: 500,
         letterSpacing: '0.08em',
         textTransform: 'uppercase',
@@ -81,21 +82,13 @@ const StatsBar = () => {
   return (
     <div ref={ref} style={{
       width: '100%',
-      background: 'rgba(10,10,16,0.85)',
-      borderTop: '1px solid rgba(255,255,255,0.05)',
-      borderBottom: '1px solid rgba(255,255,255,0.05)',
+      background: 'var(--surface-color)',
+      borderTop: '1px solid var(--border-light)',
+      borderBottom: '1px solid var(--border-light)',
       padding: '2.5rem 0',
-      backdropFilter: 'blur(12px)',
       overflow: 'hidden',
       position: 'relative',
     }}>
-      {/* subtle glow */}
-      <div style={{
-        position: 'absolute', inset: 0,
-        background: 'radial-gradient(ellipse 60% 80% at 50% 50%, rgba(59,130,246,0.06), transparent)',
-        pointerEvents: 'none',
-      }} />
-
       <div className="container" style={{ position: 'relative' }}>
         <div style={{
           display: 'flex',
@@ -111,7 +104,7 @@ const StatsBar = () => {
                 <div style={{
                   width: '1px',
                   height: '40px',
-                  background: 'rgba(255,255,255,0.1)',
+                  background: 'var(--border-light)',
                   flexShrink: 0,
                 }} />
               )}

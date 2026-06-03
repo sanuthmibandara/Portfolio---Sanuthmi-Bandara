@@ -13,7 +13,7 @@ const milestones = [
     year: '2023',
     icon: GraduationCap,
     title: 'Academic Excellence A/L',
-    desc: 'Achieved top results in the Physical Science (Maths) Stream at Bishop\'s College - Colombo 03.',
+    desc: 'G.C.E. Advanced Level – Z-Score: 1.5, Maths Stream at Bishop\'s College - Colombo 03. ICT (A), Combined Mathematics (B), Physics (C).',
     color: '#a855f7',
   },
   {
@@ -33,15 +33,15 @@ const milestones = [
   {
     year: '2025',
     icon: Award,
-    title: 'Dean\'s List Awards',
+    title: 'Dean\'s List Award',
     desc: 'Academic Excellence in Year 1 Semester 1 with a Semester GPA 4.0 (out of 4.0).',
     color: '#ef4444',
   },
   {
     year: 'Now',
     icon: Rocket,
-    title: 'Open to QA Roles',
-    desc: 'Actively seeking opportunities in Quality Assurance to apply my expertise in test automation, manual testing, and defect management.',
+    title: 'Open to IT Opportunities',
+    desc: 'Actively seeking software engineering, full-stack development, and IT roles to apply my skills in building impactful systems.',
     color: '#22c55e',
   },
 ];
@@ -58,12 +58,11 @@ const Journey = () => {
         >
           <h2 className="section-title">My <span className="text-gradient">Journey</span></h2>
           <p className="section-subtitle">
-            A timeline of growth — from first semester to shipping enterprise platforms.
+            A timeline of academic milestones, achievements, and growth in software engineering.
           </p>
         </motion.div>
 
         <div style={{ position: 'relative', maxWidth: '1000px', margin: '0 auto' }}>
-          {/* Central Vertical Line with Growth Animation */}
           <motion.div 
             initial={{ height: 0 }}
             whileInView={{ height: '100%' }}
@@ -80,7 +79,6 @@ const Journey = () => {
               transformOrigin: 'top'
             }} className="md:block" />
 
-          {/* Mobile Vertical Line */}
           <div style={{
             position: 'absolute',
             left: '20px',
@@ -103,7 +101,6 @@ const Journey = () => {
                   position: 'relative',
                   width: '100%'
                 }}>
-                  {/* Timeline Dot with Delay */}
                   <motion.div 
                     initial={{ scale: 0, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
@@ -122,7 +119,6 @@ const Journey = () => {
                       display: 'none'
                     }} className="md:block" />
 
-                  {/* Mobile Timeline Dot */}
                   <div style={{
                     position: 'absolute',
                     left: '13px',
@@ -143,7 +139,7 @@ const Journey = () => {
                       width: '100%',
                       display: 'flex',
                       justifyContent: isEven ? 'flex-end' : 'flex-start',
-                      paddingLeft: '50px', // Mobile padding
+                      paddingLeft: '50px',
                       paddingRight: '0'
                     }}
                     className="md:px-0"
@@ -160,7 +156,6 @@ const Journey = () => {
                       }}
                       className="card-light timeline-card"
                     >
-                      {/* Connector Line (Desktop) */}
                       <motion.div 
                         initial={{ width: 0 }}
                         whileInView={{ width: '50px' }}
@@ -226,4 +221,3 @@ const Journey = () => {
 };
 
 export default Journey;
-

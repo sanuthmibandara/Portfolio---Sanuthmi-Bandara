@@ -4,20 +4,20 @@ import { GraduationCap, Award } from 'lucide-react';
 const educationData = [
   {
     institution: "Sri Lanka Institute of Information Technology (SLIIT)",
-    degree: "BSc (Hons) IT in Software Engineering",
-    period: "July 2024 - July 2028 (Expected)",
-    details: "Cumulative GPA: 3.7. Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming, AI & Machine Learning, Database Design, Computer Networks, Operating Systems."
+    degree: "BSc (Hons) Information Technology in Software Engineering",
+    period: "July 2024 – July 2028 (Expected)",
+    details: "Cumulative GPA: 3.7 / 4.0. Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming, AI & Machine Learning, Database Design & Development, Computer Networks, Operating Systems & System Administration, Software Engineering, Web & Mobile Technology, Probability & Statistics."
   },
   {
     institution: "Bishop's College - Colombo 03",
-    degree: "G.C.E. Advanced Level - Maths Stream",
-    period: "2021 - 2023",
-    details: "Physical Science Stream. ICT: A, Combined Mathematics: B, Physics: C."
+    degree: "G.C.E. Advanced Level - Physical Science (Maths) Stream",
+    period: "2023",
+    details: "ICT (A), Combined Mathematics (B), Physics (C). Z-Score: 1.5."
   },
   {
     institution: "Sujatha Vidyalaya - Nugegoda",
     degree: "G.C.E. Ordinary Level",
-    period: "2010 - 2020",
+    period: "2020",
     details: "8 A's, 1 B. Achieved academic excellence."
   }
 ];
@@ -34,7 +34,7 @@ const Education = () => {
         >
           <h2 className="section-title">Education & Academic <span className="text-gradient">Path</span></h2>
           <p className="section-subtitle">
-            My formal academic journey and technical certifications that provided a strong foundation in computer science.
+            My formal academic journey and technical foundation in computer science and software engineering.
           </p>
         </motion.div>
         

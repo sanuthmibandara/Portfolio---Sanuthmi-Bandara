@@ -1,6 +1,6 @@
-# 🚀 Sanuthmi Bandara | Aspiring Quality Assurance Engineer Portfolio
+# 🚀 Sanuthmi Bandara | Software Engineering Portfolio
 
-A modern, high-performance developer portfolio built with **React**, **Vite**, and **Framer Motion**. This project showcases my QA testing skills, automated testing frameworks, and professional experience with smooth animations and a premium minimal light-themed UI.
+A modern, high-performance portfolio built with **React**, **Vite**, and **Framer Motion**. Showcases full-stack development projects, technical skills, academic achievements, and professional experience with smooth animations and a clean light-themed UI.
 
 ---
 
@@ -10,7 +10,7 @@ A modern, high-performance developer portfolio built with **React**, **Vite**, a
 - 🎨 **Premium UI**: Clean, light-mode aesthetic with soft rose accents and elegant typography.
 - 🎭 **Smooth Animations**: Powered by Framer Motion for scroll-based reveals and hover interactions.
 - 📱 **Fully Responsive**: Optimized for all screen sizes, from mobile to ultra-wide displays.
-- 🛠️ **Dynamic Components**: Modular sections for QA Skills, Projects, Experience, and Education.
+- 🛠️ **Dynamic Components**: Modular sections for Skills, Projects, Experience, and Education.
 - 📬 **Contact System**: Integrated contact form for professional inquiries.
 
 ---
@@ -22,19 +22,21 @@ A modern, high-performance developer portfolio built with **React**, **Vite**, a
 - **Styling**: Vanilla CSS & CSS Variables
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
 - **Icons**: [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)
-- **Routing**: [React Router 7](https://reactrouter.com/)
 
 ---
 
 ## 📂 Project Structure
 
 ```bash
-src/
-├── components/     # Reusable UI sections (Hero, Skills, Projects, etc.)
-├── assets/         # Images, icons, and static resources
-├── App.jsx         # Main application logic and layout
-├── main.jsx        # Entry point
-└── index.css       # Global CSS Variables and layout constraints
+sanuthmi-portfolio/
+├── src/
+│   ├── components/     # Reusable UI sections (Hero, Skills, Projects, etc.)
+│   ├── assets/         # Images, icons, and static resources
+│   ├── App.jsx         # Main application logic and layout
+│   ├── main.jsx        # Entry point
+│   └── index.css       # Global CSS Variables and layout constraints
+├── public/             # CV, favicon, and static assets
+└── package.json
 ```
 
 ---
@@ -51,7 +53,7 @@ src/
 1. **Clone the repository**
    ```bash
    git clone https://github.com/sanuthmibandara/Portfolio---Sanuthmi-Bandara.git
-   cd Portfolio---Sanuthmi-Bandara/sanuthmi-portfolio
+   cd Portfolio---Sanuthmi-Bandara
    ```
 
 2. **Install dependencies**
@@ -76,7 +78,7 @@ src/
 This project is optimized for deployment on **Vercel** or **Netlify**.
 
 ### Deploying to Vercel (Recommended)
-1. Push your code to GitHub (done!).
+1. Push your code to GitHub.
 2. Go to [Vercel](https://vercel.com/) and sign in with GitHub.
 3. Click **"Add New"** > **"Project"**.
 4. Import your repository.
@@ -87,8 +89,8 @@ This project is optimized for deployment on **Vercel** or **Netlify**.
 
 ## 👤 Author
 
-**Sanuthmi Bandara**
-- Aspiring Quality Assurance Engineer
+**Sanuthmi Dulanma Bandara**
+- Software Engineering Undergraduate at SLIIT
 
 ---
 

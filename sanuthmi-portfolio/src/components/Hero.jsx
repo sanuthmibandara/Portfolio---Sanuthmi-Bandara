@@ -17,7 +17,7 @@ const Hero = () => {
             className="inline-block mb-4 font-bold tracking-wider uppercase text-primary-color"
             style={{ color: 'var(--primary-color)', fontWeight: 700, letterSpacing: '0.1em', fontSize: '0.9rem', marginBottom: '1.5rem', display: 'inline-block' }}
           >
-            Aspiring Quality Assurance Engineer
+            Software Engineering Undergraduate
           </span>
           
           <h1 
@@ -31,16 +31,16 @@ const Hero = () => {
             className="text-xl mb-10 leading-relaxed" 
             style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', marginBottom: '2.5rem' }}
           >
-            A passionate 3rd-year Software Engineering student at SLIIT specializing in Quality Assurance. I am dedicated to ensuring flawless software delivery through rigorous manual testing and test automation.
+            A third-year Software Engineering student at SLIIT with a CGPA of 3.7. Experienced in delivering full-stack systems — skilled in real-time systems integration, REST API design, and database management.
           </p>
 
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <a href="#projects">
               <button className="btn-primary">
-                View My QA Work <ArrowRight size={20} />
+                View My Projects <ArrowRight size={20} />
               </button>
             </a>
-            <a href="/CV.pdf" download="Sanuthmi_QA_CV.pdf">
+            <a href="/CV.pdf" download="Sanuthmi_Bandara_CV.pdf">
               <button className="btn-secondary">
                 Download Resume <Download size={20} />
               </button>
@@ -69,7 +69,7 @@ const Hero = () => {
             justifyContent: 'center',
             color: 'white'
           }}>
-            <h2 style={{ fontSize: '10rem', opacity: 0.2, fontFamily: 'Playfair Display' }}>QA</h2>
+            <h2 style={{ fontSize: '8rem', opacity: 0.2, fontFamily: 'Playfair Display' }}>{'</>'}</h2>
           </div>
         </motion.div>
         

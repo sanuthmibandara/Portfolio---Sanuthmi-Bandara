@@ -1,17 +1,17 @@
 import { motion } from 'framer-motion';
 import {
-  Layers, Users, GitBranch, Calendar, Search, FileText, Server, Zap
+  Layers, Users, GitBranch, Calendar, Server, Zap, Database, Code2
 } from 'lucide-react';
 
 const skills = [
-  { icon: Layers,    title: 'Test Automation',    desc: 'Building robust automated test suites', color: '#e11d48' },
-  { icon: Search,    title: 'Attention to Detail',desc: 'Identifying edge cases and hidden bugs', color: '#a855f7' },
-  { icon: Calendar,  title: 'Agile Testing',      desc: 'Seamless integration with CI/CD & Scrums', color: '#10b981' },
-  { icon: GitBranch, title: 'Defect Tracking',    desc: 'Clear, reproducible bug reports & metrics', color: '#f59e0b' },
-  { icon: Users,     title: 'UAT Coordination',   desc: 'Ensuring products meet user requirements', color: '#ef4444' },
-  { icon: FileText,  title: 'Test Documentation', desc: 'Writing clear test plans & scenarios', color: '#06b6d4' },
-  { icon: Server,    title: 'API Testing',        desc: 'Validating backend logic and contracts', color: '#3b82f6' },
-  { icon: Zap,       title: 'Quality First',      desc: 'Advocating for best practices & standards', color: '#ec4899' },
+  { icon: Code2,    title: 'Full-Stack Development', desc: 'Building end-to-end web and mobile applications', color: '#e11d48' },
+  { icon: Server,   title: 'REST API Design',        desc: 'Designing and implementing scalable backend services', color: '#a855f7' },
+  { icon: Layers,   title: 'System Design',          desc: 'Architecture-first approach to software solutions', color: '#3b82f6' },
+  { icon: Database, title: 'Database Management',    desc: 'MySQL, MongoDB, and MS SQL schema design & queries', color: '#10b981' },
+  { icon: Calendar, title: 'Agile / Scrum',          desc: 'Collaborative development in sprint-based teams', color: '#f59e0b' },
+  { icon: GitBranch,title: 'Version Control',        desc: 'Git workflows and collaborative code reviews', color: '#ef4444' },
+  { icon: Users,    title: 'Team Collaboration',     desc: 'Cross-functional teamwork on group projects', color: '#06b6d4' },
+  { icon: Zap,      title: 'Problem Solving',        desc: 'Breaking down complex challenges into solutions', color: '#ec4899' },
 ];
 
 const WhatIBring = () => {
@@ -26,7 +26,7 @@ const WhatIBring = () => {
         >
           <h2 className="section-title">What I <span className="text-gradient">Bring to a Team</span></h2>
           <p className="section-subtitle">
-            Beyond writing code — I bring structure, communication, and leadership to every project I'm part of.
+            Beyond writing code — I bring structure, communication, and a drive to deliver reliable software.
           </p>
         </motion.div>
 
@@ -54,7 +54,6 @@ const WhatIBring = () => {
                   gap: '0.75rem',
                 }}
               >
-                {/* Icon container */}
                 <div style={{
                   width: '40px',
                   height: '40px',

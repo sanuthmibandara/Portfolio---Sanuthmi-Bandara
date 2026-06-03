@@ -8,55 +8,55 @@ import campushubImg from '../assets/campushub.png';
 
 const projects = [
   {
-    title: "E-Commerce Test Automation Suite",
-    subtitle: "Selenium WebDriver & TestNG",
-    description: "Designed and developed a comprehensive automated UI testing framework for an e-commerce platform. Implemented the Page Object Model (POM) pattern for maintainability and integrated with Jenkins for CI/CD.",
-    tech: ["Selenium", "Java", "TestNG", "Maven", "Jenkins"],
-    github: "#",
-    image: campushubImg,
-    accent: "#ec4899",
-    tag: "UI Automation",
-  },
-  {
-    title: "REST API Validation Framework",
-    subtitle: "Postman & RestAssured",
-    description: "Built a robust automated API testing suite using RestAssured and Java to validate endpoints for a complex microservices architecture. Automated schema validation and authorization checks.",
-    tech: ["RestAssured", "Java", "Postman", "JSON", "JUnit"],
+    title: "Smart Gate Automation System",
+    subtitle: "IoT + Computer Vision · Embedded Systems",
+    description: "Developed embedded control logic using Arduino (C/C++) on ESP32-CAM to process sensor inputs, handle OCR-based vehicle authentication, and control automated gate operations. Implemented motor control with PIR sensors and WiFi/HTTP communication via Blynk IoT for real-time monitoring.",
+    tech: ["Arduino", "ESP32-CAM", "C/C++", "Blynk IoT", "OCR", "PIR Sensors"],
     github: "#",
     image: ecotransitImg,
-    accent: "#f43f5e",
-    tag: "API Testing",
+    accent: "#f59e0b",
+    tag: "IoT",
   },
   {
-    title: "Mobile App Test Automation",
-    subtitle: "Appium & Cucumber (BDD)",
-    description: "Engineered a cross-platform (iOS/Android) mobile test automation framework using Appium. Integrated Cucumber for Behavior-Driven Development to ensure test cases mapped directly to business requirements.",
-    tech: ["Appium", "Cucumber", "Java", "Gherkin", "Appium Inspector"],
+    title: "WasteWise",
+    subtitle: "Smart Garbage Management System",
+    description: "Designed and developed the Complaint & Feedback Management module for a smart garbage management system integrating citizen reporting and IoT-based bin monitoring using React, Spring Boot REST APIs, MySQL, and Arduino C++.",
+    tech: ["React", "Spring Boot", "MySQL", "REST API", "Arduino", "Agile"],
+    github: "#",
+    image: campushubImg,
+    accent: "#10b981",
+    tag: "Full-Stack",
+  },
+  {
+    title: "Food Ordering Mobile Application",
+    subtitle: "Web and Mobile Technology · Group Project",
+    description: "Designed, developed, and deployed the full User Management module for a cross-platform system using Node.js, Express, MongoDB, and React Native. Engineered JWT-based authentication with Role-Based Access Control for Customer, Driver, and Store Administrator roles.",
+    tech: ["Node.js", "Express", "MongoDB", "React Native", "JWT", "RBAC"],
     github: "#",
     image: swiftrouteImg,
     accent: "#a855f7",
-    tag: "Mobile QA",
+    tag: "Mobile",
   },
   {
-    title: "Vehicle Spare-Parts System QA",
-    subtitle: "Manual Testing & Defect Tracking",
-    description: "Led the manual testing lifecycle for a vehicle spare-parts web platform. Authored comprehensive test plans, executed regression suites, and tracked defects using Jira.",
-    tech: ["Jira", "Test Cases", "UAT", "Exploratory Testing"],
+    title: "Vehicle Spare-Parts Management System",
+    subtitle: "Software Engineering · Group Project",
+    description: "Designed and developed customer-facing features including spare parts search, order history viewing, and product review functionality using Java Spring Boot and MS SQL within an Agile team following MVC architecture and RESTful APIs.",
+    tech: ["Java", "Spring Boot", "MS SQL", "REST API", "MVC", "Figma"],
     github: "#",
     image: vehicleRentalImg,
     accent: "#06b6d4",
-    tag: "Manual QA",
+    tag: "Web App",
   },
   {
-    title: "Smart Gate Automation QA",
-    subtitle: "Hardware & Software Integration Testing",
-    description: "Developed and executed specialized test scenarios to validate the integration between IoT hardware (ESP32-CAM) and software interfaces, ensuring reliable OCR-based vehicle authentication.",
-    tech: ["Integration Testing", "IoT", "Arduino", "System Testing"],
+    title: "Restaurant Table Reservation System",
+    subtitle: "Object Oriented Programming · Group Project",
+    description: "Designed and developed the Menu Management module with CRUD functionalities for menu items, categories, pricing, and availability using Spring Boot, Apache Tomcat, MySQL, HTML, and CSS.",
+    tech: ["Spring Boot", "MySQL", "Apache Tomcat", "HTML", "CSS", "GitHub"],
     github: "#",
     image: acadamixImg,
-    accent: "#f59e0b",
-    tag: "IoT QA",
-  }
+    accent: "#e11d48",
+    tag: "Web App",
+  },
 ];
 
 const ProjectCard = ({ project, index }) => (
@@ -72,14 +72,12 @@ const ProjectCard = ({ project, index }) => (
       overflow: 'hidden',
     }}
   >
-    {/* Accent top bar */}
     <div style={{
       height: '4px',
       background: project.accent,
       width: '100%',
     }} />
 
-    {/* Image */}
     <div style={{ position: 'relative', height: '220px', overflow: 'hidden', background: '#f8fafc' }}>
       <motion.img
         src={project.image}
@@ -88,7 +86,6 @@ const ProjectCard = ({ project, index }) => (
         transition={{ duration: 0.4 }}
         style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
       />
-      {/* Tag badge */}
       <div style={{
         position: 'absolute', top: '1rem', right: '1rem',
         padding: '0.35rem 0.8rem',
@@ -105,7 +102,6 @@ const ProjectCard = ({ project, index }) => (
       </div>
     </div>
 
-    {/* Content */}
     <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <div>
@@ -141,7 +137,6 @@ const ProjectCard = ({ project, index }) => (
         {project.description}
       </p>
 
-      {/* Tech pills */}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '0.5rem' }}>
         {project.tech.map(t => (
           <span key={t} style={{
@@ -171,9 +166,9 @@ const Projects = () => {
           viewport={{ once: true }}
           className="section-header"
         >
-          <h2 className="section-title">Software <span className="text-gradient">Projects</span></h2>
+          <h2 className="section-title">Academic <span className="text-gradient">Projects</span></h2>
           <p className="section-subtitle">
-            A curated selection of systems built from the ground up — spanning enterprise platforms, IoT, and real-time applications.
+            Full-stack systems, IoT integrations, and mobile applications built through academic group projects at SLIIT.
           </p>
         </motion.div>
 

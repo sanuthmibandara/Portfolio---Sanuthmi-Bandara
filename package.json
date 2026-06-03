@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-sanuthmi-bandara",
+  "private": true,
+  "workspaces": [
+    "sanuthmi-portfolio"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w sanuthmi-portfolio",
+    "build": "npm run build -w sanuthmi-portfolio",
+    "lint": "npm run lint -w sanuthmi-portfolio",
+    "preview": "npm run preview -w sanuthmi-portfolio"
+  }
+}

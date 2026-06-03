@@ -22,7 +22,6 @@ const OpenToWork = () => {
         cursor: 'default',
       }}
     >
-      {/* Pulsing green dot */}
       <div style={{ position: 'relative', width: '10px', height: '10px', flexShrink: 0 }}>
         <motion.div
           animate={{ scale: [1, 1.9, 1], opacity: [0.7, 0, 0.7] }}
@@ -57,7 +56,7 @@ const OpenToWork = () => {
           color: 'var(--text-secondary)',
           fontWeight: 600,
         }}>
-          QA Roles
+          IT & Software Roles
         </span>
       </div>
     </motion.div>
