@@ -4,21 +4,26 @@ import { GraduationCap, Award } from 'lucide-react';
 const educationData = [
   {
     institution: "Sri Lanka Institute of Information Technology (SLIIT)",
-    degree: "BSc (Hons) Information Technology in Software Engineering",
+    degree: "BSc (Hons) Information Technology specialized in Software Engineering",
     period: "July 2024 – July 2028 (Expected)",
-    details: "Cumulative GPA: 3.7 / 4.0. Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming, AI & Machine Learning, Database Design & Development, Computer Networks, Operating Systems & System Administration, Software Engineering, Web & Mobile Technology, Probability & Statistics."
+    details: `Cumulative GPA: 3.7 / 4.0
+
+Relevant Coursework:
+Data Structures & Algorithms, Object-Oriented Programming, Artificial Intelligence & Machine Learning, Database Design & Development, Computer Networks, Operating Systems & System Administration, Software Engineering, Web & Mobile Technology, Probability & Statistics.`
   },
   {
     institution: "Bishop's College - Colombo 03",
     degree: "G.C.E. Advanced Level - Physical Science (Maths) Stream",
-    period: "2023",
-    details: "ICT (A), Combined Mathematics (B), Physics (C). Z-Score: 1.5."
+    period: "2021 - 2023",
+    details: `ICT (A), Combined Mathematics (B), Physics (C)
+
+Z-Score: 1.5`
   },
   {
     institution: "Sujatha Vidyalaya - Nugegoda",
-    degree: "G.C.E. Ordinary Level",
-    period: "2020",
-    details: "8 A's, 1 B. Achieved academic excellence."
+    degree: "G.C.E. Ordinary Level ",
+    period: "2010 - 2020",
+    details: "Achieved academic excellence with 8 A's and 1 B."
   }
 ];
 
@@ -57,7 +62,7 @@ const Education = () => {
               <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600 }}>
                 <Award size={16} /> {edu.period}
               </div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>{edu.details}</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6, whiteSpace: 'pre-line' }}>{edu.details}</p>
             </motion.div>
           ))}
         </div>

@@ -6,22 +6,25 @@ const milestones = [
     year: '2020',
     icon: Target,
     title: 'Academic Excellence O/L',
-    desc: 'Achieved 8 A\'s and 1 B at G.C.E. Ordinary Level from Sujatha Vidyalaya - Nugegoda.',
+    desc: 'Achieved 8 A\'s and 1 B at G.C.E. Ordinary Level Examination from Sujatha Vidyalaya - Nugegoda.',
     color: '#ec4899',
+    certificate: '/cert-ol.jpeg',
   },
   {
     year: '2023',
     icon: GraduationCap,
     title: 'Academic Excellence A/L',
-    desc: 'G.C.E. Advanced Level – Z-Score: 1.5, Maths Stream at Bishop\'s College - Colombo 03. ICT (A), Combined Mathematics (B), Physics (C).',
+    desc: 'G.C.E. Advanced Level Examination – Z-Score: 1.5, Maths Stream at Bishop\'s College - Colombo 03. ICT (A), Combined Mathematics (B), Physics (C).',
     color: '#a855f7',
+    certificate: '/cert-al.jpeg',
   },
   {
     year: '2024',
     icon: Cpu,
     title: 'Computer Science Recognition',
-    desc: 'Successful completion of 30+ comprehensive programming projects. Issued by Code.org, USA & DP Education Coding School.',
+    desc: 'Successful completion of 30+ comprehensive programming projects. Issued by Code.org, USA & DP Education Coding School, Sri Lanka.',
     color: '#10b981',
+    certificate: '/cert-cs.jpeg',
   },
   {
     year: '2024',
@@ -36,12 +39,13 @@ const milestones = [
     title: 'Dean\'s List Award',
     desc: 'Academic Excellence in Year 1 Semester 1 with a Semester GPA 4.0 (out of 4.0).',
     color: '#ef4444',
+    certificate: '/cert-deans.jpeg',
   },
   {
     year: 'Now',
     icon: Rocket,
     title: 'Open to IT Opportunities',
-    desc: 'Actively seeking software engineering, full-stack development, and IT roles to apply my skills in building impactful systems.',
+    desc: 'Actively seeking software engineering, quality assurance, and IT roles to apply my skills in building impactful systems.',
     color: '#22c55e',
   },
 ];
@@ -196,9 +200,28 @@ const Journey = () => {
                           <h3 style={{ fontSize: '1.1rem', color: 'var(--text-primary)' }}>{m.title}</h3>
                         </div>
                       </div>
-                      <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
+                      <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: m.certificate ? '0.75rem' : 0 }}>
                         {m.desc}
                       </p>
+                      {m.certificate && (
+                        <a
+                          href={m.certificate}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            fontSize: '0.8rem',
+                            color: 'var(--text-secondary)',
+                            textDecoration: 'none',
+                            fontWeight: 500,
+                            display: 'inline-block',
+                            transition: 'color 0.2s',
+                          }}
+                          onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--text-primary)'; }}
+                          onMouseLeave={(e) => { e.currentTarget.style.color = 'var(--text-secondary)'; }}
+                        >
+                          View Certificate →
+                        </a>
+                      )}
                     </motion.div>
                   </motion.div>
                 </div>

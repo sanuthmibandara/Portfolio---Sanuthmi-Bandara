@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const stats = [
   { value: 5, label: 'Full-Stack Projects', suffix: '+' },
-  { value: 30, label: 'Code Projects', suffix: '+' },
+  { value: 3, label: 'Team Collaborations', suffix: '+' },
   { value: 3.7, label: 'CGPA at SLIIT', suffix: '', isDecimal: true },
   { value: 2, label: 'Years Building', suffix: '+' },
 ];

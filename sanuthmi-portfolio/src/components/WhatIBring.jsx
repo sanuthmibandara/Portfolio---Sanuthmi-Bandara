@@ -6,7 +6,7 @@ import {
 const skills = [
   { icon: Code2,    title: 'Full-Stack Development', desc: 'Building end-to-end web and mobile applications', color: '#e11d48' },
   { icon: Server,   title: 'REST API Design',        desc: 'Designing and implementing scalable backend services', color: '#a855f7' },
-  { icon: Layers,   title: 'System Design',          desc: 'Architecture-first approach to software solutions', color: '#3b82f6' },
+  { icon: Layers,   title: 'Quality Assurance',      desc: 'Manual testing, defect reporting, test case design, and quality validation.', color: '#3b82f6' },
   { icon: Database, title: 'Database Management',    desc: 'MySQL, MongoDB, and MS SQL schema design & queries', color: '#10b981' },
   { icon: Calendar, title: 'Agile / Scrum',          desc: 'Collaborative development in sprint-based teams', color: '#f59e0b' },
   { icon: GitBranch,title: 'Version Control',        desc: 'Git workflows and collaborative code reviews', color: '#ef4444' },

@@ -31,13 +31,13 @@ const Hero = () => {
             className="text-xl mb-10 leading-relaxed" 
             style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', marginBottom: '2.5rem' }}
           >
-            A third-year Software Engineering student at SLIIT with a CGPA of 3.7. Experienced in delivering full-stack systems — skilled in real-time systems integration, REST API design, and database management.
+            A passionate 3rd-year Information Technology student at SLIIT specializing in Software Engineering. I am passionate about leveraging technology to solve real-world problems and create meaningful digital solutions.
           </p>
 
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <a href="#projects">
               <button className="btn-primary">
-                View My Projects <ArrowRight size={20} />
+                View Projects <ArrowRight size={20} />
               </button>
             </a>
             <a href="/CV.pdf" download="Sanuthmi_Bandara_CV.pdf">
@@ -55,21 +55,35 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           style={{ flex: 1, display: 'flex', justifyContent: 'center' }}
         >
-          <div style={{
-            position: 'relative',
-            width: '100%',
-            maxWidth: '450px',
-            aspectRatio: '1',
-            borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%',
-            background: 'linear-gradient(135deg, var(--secondary-color), var(--primary-color))',
-            boxShadow: 'var(--card-shadow-hover)',
-            overflow: 'hidden',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: 'white'
-          }}>
-            <h2 style={{ fontSize: '8rem', opacity: 0.2, fontFamily: 'Playfair Display' }}>{'</>'}</h2>
+          <div
+            className="hero-photo-frame"
+            style={{
+              position: 'relative',
+              width: '100%',
+              maxWidth: '450px',
+              aspectRatio: '1',
+              borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%',
+              background: 'linear-gradient(135deg, var(--secondary-color), var(--primary-color))',
+              boxShadow: 'var(--card-shadow-hover)',
+              overflow: 'hidden',
+              display: 'flex',
+              alignItems: 'flex-end',
+              justifyContent: 'center',
+              padding: '1.25rem 1.25rem 0',
+            }}
+          >
+            <img
+              src="/profile.png"
+              alt="Sanuthmi Bandara"
+              style={{
+                width: '92%',
+                height: '92%',
+                objectFit: 'contain',
+                objectPosition: 'center bottom',
+                display: 'block',
+                filter: 'drop-shadow(0 8px 24px rgba(0, 0, 0, 0.12))',
+              }}
+            />
           </div>
         </motion.div>
         

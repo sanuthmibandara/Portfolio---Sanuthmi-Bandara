@@ -56,7 +56,7 @@ const OpenToWork = () => {
           color: 'var(--text-secondary)',
           fontWeight: 600,
         }}>
-          IT & Software Roles
+          IT, QA & Software Roles
         </span>
       </div>
     </motion.div>

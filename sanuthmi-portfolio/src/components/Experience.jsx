@@ -4,12 +4,12 @@ import { Briefcase, Calendar, MapPin } from 'lucide-react';
 const experiences = [
   {
     role: "Private ICT Tutor",
-    company: "Self-Employed Home-Based Individual Tutoring",
-    location: "Sri Lanka",
+    company: "Self-Employed, Home-Based Individual Tutoring",
+    location: "Homagama, Sri Lanka",
     period: "2024 - Present",
     description: [
       "Conducting one-on-one and small-group ICT classes for G.C.E. Advanced Level students, covering core concepts such as programming fundamentals, databases, networking, and system logic, tailored to individual learning needs.",
-      "Prepare lesson plans, practice questions, and exam-oriented explanations to improve students' understanding and performance, while developing strong communication, mentoring, and problem-solving skills."
+      "Preparing lesson plans, practice questions, and exam-oriented explanations to improve students' understanding and performance, while developing strong communication, mentoring, and problem-solving skills."
     ]
   }
 ];

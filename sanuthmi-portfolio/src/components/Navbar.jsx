@@ -61,8 +61,8 @@ const Navbar = () => {
             animate={{ opacity: 1, scale: 1 }}
             className="flex flex-row items-center gap-4 ml-4"
           >
-            <a href="#" target="_blank" style={{ color: 'var(--text-secondary)', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaGithub size={20} /></a>
-            <a href="#" target="_blank" style={{ color: 'var(--text-secondary)', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaLinkedin size={20} /></a>
+            <a href="https://github.com/sanuthmibandara" target="_blank" style={{ color: 'var(--text-secondary)', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaGithub size={20} /></a>
+            <a href="https://www.linkedin.com/in/sanuthmi-bandara-435057335/" target="_blank" style={{ color: 'var(--text-secondary)', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--primary-color)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}><FaLinkedin size={20} /></a>
           </motion.div>
         </div>
 

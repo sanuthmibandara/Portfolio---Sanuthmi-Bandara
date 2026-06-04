@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { FaGithub } from 'react-icons/fa';
-import swiftrouteImg from '../assets/swiftroute.png';
-import ecotransitImg from '../assets/ecotransit.png';
-import acadamixImg from '../assets/acadamix.png';
-import vehicleRentalImg from '../assets/vehicle-rental.png';
-import campushubImg from '../assets/campushub.png';
+import SmartGateImg from '../assets/smartgate.png';
+import WasteWiseImg from '../assets/wastewise.png';
+import FoodDashImg from '../assets/fooddash.png';
+import SparePartsImg from '../assets/spareparts.png';
+import TableReservationImg from '../assets/tablereservation.png';
 
 const projects = [
   {
@@ -12,8 +12,8 @@ const projects = [
     subtitle: "IoT + Computer Vision · Embedded Systems",
     description: "Developed embedded control logic using Arduino (C/C++) on ESP32-CAM to process sensor inputs, handle OCR-based vehicle authentication, and control automated gate operations. Implemented motor control with PIR sensors and WiFi/HTTP communication via Blynk IoT for real-time monitoring.",
     tech: ["Arduino", "ESP32-CAM", "C/C++", "Blynk IoT", "OCR", "PIR Sensors"],
-    github: "#",
-    image: ecotransitImg,
+    github: "https://github.com/sanuthmibandara/Smart-Gate-Automation-System.git",
+    image: SmartGateImg,
     accent: "#f59e0b",
     tag: "IoT",
   },
@@ -22,38 +22,38 @@ const projects = [
     subtitle: "Smart Garbage Management System",
     description: "Designed and developed the Complaint & Feedback Management module for a smart garbage management system integrating citizen reporting and IoT-based bin monitoring using React, Spring Boot REST APIs, MySQL, and Arduino C++.",
     tech: ["React", "Spring Boot", "MySQL", "REST API", "Arduino", "Agile"],
-    github: "#",
-    image: campushubImg,
+    github: "https://github.com/sanuthmibandara/WasteWise-Garbage-Management-System--Feedback-Complaint-Module.git",
+    image: WasteWiseImg,
     accent: "#10b981",
     tag: "Full-Stack",
   },
   {
-    title: "Food Ordering Mobile Application",
-    subtitle: "Web and Mobile Technology · Group Project",
-    description: "Designed, developed, and deployed the full User Management module for a cross-platform system using Node.js, Express, MongoDB, and React Native. Engineered JWT-based authentication with Role-Based Access Control for Customer, Driver, and Store Administrator roles.",
+    title: "FoodDash",
+    subtitle: "Food Ordering Mobile Application",
+    description: "Designed and developed the full User Management module for a cross-platform system using Node.js, Express, MongoDB, and React Native. Engineered JWT-based authentication with Role-Based Access Control for Customer, Driver, and Store Administrator roles.",
     tech: ["Node.js", "Express", "MongoDB", "React Native", "JWT", "RBAC"],
-    github: "#",
-    image: swiftrouteImg,
+    github: "https://github.com/sanuthmibandara/Food-Ordering-App.git",
+    image: FoodDashImg,
     accent: "#a855f7",
     tag: "Mobile",
   },
   {
     title: "Vehicle Spare-Parts Management System",
-    subtitle: "Software Engineering · Group Project",
+    subtitle: "Software Engineering · Academic Group Project",
     description: "Designed and developed customer-facing features including spare parts search, order history viewing, and product review functionality using Java Spring Boot and MS SQL within an Agile team following MVC architecture and RESTful APIs.",
     tech: ["Java", "Spring Boot", "MS SQL", "REST API", "MVC", "Figma"],
     github: "#",
-    image: vehicleRentalImg,
+    image: SparePartsImg,
     accent: "#06b6d4",
     tag: "Web App",
   },
   {
     title: "Restaurant Table Reservation System",
-    subtitle: "Object Oriented Programming · Group Project",
+    subtitle: "Object Oriented Programming · Academic Group Project",
     description: "Designed and developed the Menu Management module with CRUD functionalities for menu items, categories, pricing, and availability using Spring Boot, Apache Tomcat, MySQL, HTML, and CSS.",
     tech: ["Spring Boot", "MySQL", "Apache Tomcat", "HTML", "CSS", "GitHub"],
     github: "#",
-    image: acadamixImg,
+    image: TableReservationImg,
     accent: "#e11d48",
     tag: "Web App",
   },
@@ -166,9 +166,9 @@ const Projects = () => {
           viewport={{ once: true }}
           className="section-header"
         >
-          <h2 className="section-title">Academic <span className="text-gradient">Projects</span></h2>
+          <h2 className="section-title">My <span className="text-gradient">Projects</span></h2>
           <p className="section-subtitle">
-            Full-stack systems, IoT integrations, and mobile applications built through academic group projects at SLIIT.
+            Full-stack systems, IoT integrations, and mobile applications built through self-driven and academic projects at SLIIT.
           </p>
         </motion.div>
 
