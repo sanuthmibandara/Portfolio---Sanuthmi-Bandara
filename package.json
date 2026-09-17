@@ -9,5 +9,8 @@
     "build": "npm run build -w sanuthmi-portfolio",
     "lint": "npm run lint -w sanuthmi-portfolio",
     "preview": "npm run preview -w sanuthmi-portfolio"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }
